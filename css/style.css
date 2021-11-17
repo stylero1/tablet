@@ -1,0 +1,345 @@
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+body{
+    font-family: 'Inconsolata', sans-serif;  
+    /* background-image: url('../images/concrete_seamless.png');  */
+    background-color: whitesmoke;
+}
+
+#contact{
+    font-family: 'Inconsolata', sans-serif;  
+    /* background-image: url('../images/concrete_seamless.png');  */
+    background-color: white;
+}
+
+.contact_text{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#logo{
+    max-width: 100%;
+    height: 200px;
+}
+
+
+#image1, #image2, #image3, #image4, #image5, #image6, #image7, #image8, #image9, #image10, #image11, #image12, #image13, #image14, #image15, #image16, #image17, #image18, #image19, #image20, #image21, #image22, #image23, #image24 {
+    border: solid 3px black;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.gallery{
+    
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(23, auto);
+    grid-auto-flow: dense;
+    
+    grid-gap: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px;
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+#gallery{
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    border: 3px solid black;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    /* border-radius: 50%; */
+    /* padding: 5px; */
+    
+}
+
+nav{
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+}
+
+nav ul{
+    display: flex;
+    padding: 3px;
+    align-items: center;
+    flex-direction: column-reverse;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: #FCFCFC;
+}
+
+nav a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+#current_page{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: 3px underline;
+    /* transform: translate(0, 10px) */
+    
+}
+
+/* nav.upper_links li:hover{
+    transform: translate(0, 10px)
+} */
+
+nav a:focus{
+    color: black;
+}
+
+nav.upper_links{
+    width: 70%;
+    background-color: rgb(25, 92, 134);
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 0 auto;
+    
+}
+
+nav.upper_links ul{
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+nav.upper_links li:last-child{
+    border-right: none;
+}
+
+h1{
+    padding: 20px 20px 10px 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h2{
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#crazy{
+    border: 3px solid red;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+header p.intro_text{
+    border-top: 1px solid black;
+    /* border-right: 1px solid black;
+    border-left: 1px solid black; */
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}
+
+div.start p{
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+div.about_image img{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    
+}
+
+div.history p {
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+div.history_image{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+div.intro_image{
+    padding: 5px;
+}
+
+
+@media screen and (min-width: 760px){
+
+    nav{
+        font-size: 18px;
+        text-align: center;
+        padding: 5px;
+        margin: 0;
+    }
+    
+    nav ul{
+        display: flex;
+        padding: 3px;
+        align-items: center;
+        margin: 0;
+        flex-direction: row;
+    }
+
+    
+    nav a:hover{
+        color: black;
+        text-decoration: underline;
+    }
+    
+    #current_page{
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: 3px underline;
+        transform: translate(0, 10px)
+        
+    }
+    
+    nav.upper_links li:hover{
+        transform: translate(0, 5px)
+    } 
+
+    nav a:focus{
+        color: black;
+    }
+    
+    nav.upper_links{
+        width: 80%;
+        background-color: rgb(25, 92, 134);
+        border: 2px solid black;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0);
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+
+    
+    nav.upper_links ul{
+        border-right: 3px solid black;
+        border-left: 3px solid black;
+        gap: 8px;
+        /* align-items: center; */
+        /* padding-left: 5px; */
+        justify-content: space-between;
+    }
+    
+    nav.upper_links li:last-child{
+        border-right: none;
+    }
+
+    a.skip {
+        background: white;
+        left: 0;
+        padding: 6px;
+        -webkit-transition: top 1s ease-out;
+        transition: top 1s ease-out;
+        z-index: 1;
+        position: absolute;
+        top: -80px;
+      }
+      
+    a.skip:focus, a.skip:active{
+        position: static;
+        z-index: 99;
+    }
+
+    *:focus{
+        border: 2px solid;
+      }
+
+    .gallery{
+
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(23, auto);
+        grid-auto-flow: dense;
+        
+        grid-gap: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 5px;
+    
+    }
+
+    div.history p {
+        text-align: left;
+        margin-right: 200px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        border-right: 5px solid black;
+        padding-right: 7px;
+        padding-left: 3px;
+    }
+
+    div.history_image img{
+        width: 100%;
+        height: auto;
+        padding: 5px;
+        /* margin: 0; */
+    }
+
+    div.intro_image img{
+        padding: 5px;
+        margin: auto;
+        display: block;
+    }
+
+    div.start p{
+        text-align: center;
+        margin-right: 5px;
+        margin-left: 200px;
+        margin-bottom: 5px;
+        border-left: 5px solid black;
+        padding-right: 3px;
+        padding-left: 7px;
+    }
+
+    #scroll{
+        
+        height: 100px;
+        overflow-y: scroll;
+        
+    }
+
+    #scroll_less{
+        
+        height: 150px;
+        overflow-y: scroll;
+        
+    }
+}
